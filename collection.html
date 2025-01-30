@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padini | Collections</title>
+    <link rel="icon" type="image/x-icon" href="image/padini-icon.png">
+    <link rel="stylesheet" href="css/nav.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: black;
+            box-shadow: 0 2px 5px gray;
+            padding: 1px 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        /* Banner Section */
+        .banner {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: maroon;
+            margin-top: 20px;
+        }
+
+        .banner h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 16px;
+        }
+
+        /* Brand Icons Section */
+        .brands {
+            background-color: #f9f9f9;
+            padding: 20px 0;
+        }
+
+        .brands .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .brand-card {
+            width: 150px;
+            text-align: center;
+        }
+
+        .brand-card img {
+            width: 100px;
+            height: auto;
+            margin: 0 auto 10px;
+            display: block;
+        }
+
+        .brand-card p {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* Collections Section */
+        .collections-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .collections-section h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .collections {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .collection-card {
+            width: 300px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .collection-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .collection-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .collection-card h3 {
+            margin: 15px 0 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .collection-card p {
+            font-size: 14px;
+            color: #777;
+            margin: 0 15px 15px;
+        }
+
+        .collection-card a {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .collection-card a:hover {
+            background-color: #444;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        Exclusive Sale: Get Up to 50% Off on Selected Items!
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    PADINI.COM
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="campaign1.html">#ReuseWithPadini</a></li>
+                    <li><a href="campaign2.html">#RecycleWithPadini</a></li>
+                    <li>
+                        <a href="#">More</a>
+                        <div class="dropdown-content">
+                            <a href="about.html">About</a>
+                            <a href="collection.html">Collection</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Brand Icons Section -->
+    <section class="brands">
+        <div class="container">
+            <div class="brand-card">
+                <img src="image/VINCCI Logo.jpeg" alt="Vincci">
+                <p>Vincci</p>
+            </div>
+
+            <div class="brand-card">
+                <img src="image/SEED Logo.jpeg" alt="Seed">
+                <p>Seed</p>
+            </div>
+
+            <div class="brand-card">
+                <img src="image/PDI Logo.jpeg" alt="PDI">
+                <p>PDI</p>
+            </div>
+
+            <div class="brand-card">
+                <img src="image/PDI Authentic Logo.jpeg" alt="Padini Authentics">
+                <p>Padini Authentics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections-section">
+        <h2 style="color: maroon;">Our Collections</h2>
+        <div class="collections">
+            <div class="collection-card">
+                <img src="image/padinimen.webp" alt="Men's Collection">
+                <h3>Men</h3>
+                <p>Sharp and stylish apparel for every occasion.</p>
+                <a href="https://www.padini.com/men.html">Shop Men</a>
+            </div>
+
+            <div class="collection-card">
+                <img src="image/padiniwomen.jpg" alt="Women's Collection">
+                <h3>Women</h3>
+                <p>Elegant and trendy styles for modern women.</p>
+                <a href="https://www.padini.com/women.html">Shop Women</a>
+            </div>
+
+            <div class="collection-card">
+                <img src="image/padinikids.webp" alt="Kids' Collection">
+                <h3>Kids</h3>
+                <p>Comfortable and fun outfits for little ones.</p>
+                <a href="https://www.padini.com/kids.html">Shop Kids</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Padini Campaign Website | IMD318 Assignment purpose.</p>
+        <p><a href="terms.html">Terms & Conditions</a> | <a href="policy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

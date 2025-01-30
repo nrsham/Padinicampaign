@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padini | Reuse Campaign</title>
+    <link rel="icon" type="image/x-icon" href="image/padini-icon.png">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/campaign1.css">
+    
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header {
+            background-color: black;
+            box-shadow: 0 2px 5px gray;
+            padding: 1px 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        Exclusive Sale: Get Up to 50% Off on Selected Items!
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    PADINI.COM
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="campaign1.html">#ReuseWithPadini</a></li>
+                    <li><a href="campaign2.html">#RecycleWithPadini</a></li>
+                    <li>
+                        <a href="#">More</a>
+                        <div class="dropdown-content">
+                            <a href="about.html">About</a>
+                            <a href="collection.html">Collection</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>  
+
+    <main>
+        <h2 class="main-title">#ReuseWithPadini</h2>
+        <div class="campaign-section">
+        <section class="hero">
+            <div class="image-container">
+                <img src="Image/padini - c8.jpg" alt="Campaign 1 Image">
+            </div>
+            <div class="text-container">
+                <h2>About this campaign</h2>
+                <p>A reuse campaign from Padini is a sustainability initiative designed to reduce textile waste by encouraging customers to repurpose or return their old garments instead of throwing them away. By promoting reuse, Padini aims to extend the lifespan of clothing, reduce the demand for new production, and minimize the depletion of natural resources.  Through these efforts, customers can actively participate in reducing waste while also benefiting from rewards such as get another reuse clothes.</p>
+            </div>
+        </section>
+
+        <hr class="separator">
+
+        <section class="participate">
+            <h2 style="text-align: center;">Ways To Participate</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="Image/padini - c9.jpg" alt="Step 1">
+                    <h3>Prepare Reuse Clothes</h3>
+                    <p>Donate reused clothes that are thoroughly cleaned and free of stains or damage, ensuring they are in good condition.</p>
+                </div>
+                <div class="card">
+                    <img src="Image/padini - c11.jpg" alt="Step 2">
+                    <h3>Drop Off Reuse Clothes</h3>
+                    <p>Drop off gently used clothes at participating stores, ensuring they are recycled or repurposed for reuse.</p>
+                </div>
+                <div class="card">
+                    <img src="Image/padini - c10.jpg" alt="Step 3">
+                    <h3>Get Another Free Reuse Clothes</h3>
+                    <p>Donate clothes and receive a free reused item based on the number of clothes donated. Redeem at cashier at participating stores.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Participate Mall</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pavillion Kuala Lumpur</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mid Valley Megamall</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>IOI City Mall, Putrajaya</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>1 Utama Shopping Centre</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Sunway Pyramid</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>AEON Mall Bukit Tinggi </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Melawati Mall</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
+
+    <script>
+        // Get the button
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      
+        // Show the button when the user scrolls down 100px from the top
+        window.onscroll = function() {
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollToTopBtn.style.display = "block";
+          } else {
+            scrollToTopBtn.style.display = "none";
+          }
+        };
+      
+        // Scroll to the top when the button is clicked
+        scrollToTopBtn.onclick = function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+      </script>
+      
+<footer>
+    <p>&copy; 2025 Padini Campaign Website | IMD318 Assignment purpose.</p>
+    <a href="terms.html">Terms & Conditions</a> | <a href="policy.html">Privacy Policy</a>
+</footer>
+</body>
+</html>

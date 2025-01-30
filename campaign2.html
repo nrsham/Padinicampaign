@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padini | Recycle Campaign</title>
+    <link rel="icon" type="image/x-icon" href="image/padini-icon.png">
+    <link rel="stylesheet" href="css/nav.css">
+    
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header {
+            background-color: black;
+            box-shadow: 0 2px 5px gray;
+            padding: 1px 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Recycling Campaign Content */
+        .campaign-section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f5f5f5;
+            color: black;
+        }
+
+        .campaign-section h1 {
+            color: maroon;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .campaign-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            width: 250px;
+        }
+
+        .step img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .step h3 {
+            font-size: 20px;
+            color: grey;
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Form Section Styling */
+    .form-section {
+        padding: 40px 20px;
+        background-color: #f5f5f5;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .campaign-form {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .form-group label {
+        display: block;
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 5px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .form-group input:focus {
+        border-color: #008000;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
+    }
+
+    .submit-btn {
+        background-color: #008000;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+        background-color: #005700;
+    }
+
+    select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        appearance: none; /* Remove default arrow */
+        background: white;
+        background-size: 10px;
+    }
+
+    select:focus {
+        border-color: #008000;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
+    }
+
+    #scrollToTopBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 18px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none; /* Hidden by default */
+        transition: background-color 0.3s ease;
+        }
+        
+        #scrollToTopBtn:hover {
+        background-color: #555;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        Exclusive Sale: Get Up to 50% Off on Selected Items!
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    PADINI.COM
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="campaign1.html">#ReuseWithPadini</a></li>
+                    <li><a href="campaign2.html">#RecycleWithPadini</a></li>
+                    <li>
+                        <a href="#">More</a>
+                        <div class="dropdown-content">
+                            <a href="about.html">About</a>
+                            <a href="collection.html">Collection</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>  
+
+    <div class="campaign-section">
+        <h1>#RecycleWithPadini</h1>
+        <p>Join our recycling initiative to reduce waste and create a greener future. Together, we can make a difference!</p>
+
+        <div class="steps">
+            <div class="step">
+                <img src="image/bin.jpg" alt="Drop Off Clothes">
+                <h3>Drop Off Your Clothes</h3>
+                <p>Bring your old clothes to the nearest Padini store and place them in our recycling bins.</p>
+            </div>
+            <div class="step">
+                <img src="image/voucher.jpg" alt="Get Rewarded">
+                <h3>Get Rewarded</h3>
+                <p>Receive exclusive discounts and vouchers for participating in our recycling program.</p>
+            </div>
+            <div class="step">
+                <img src="image/socmed.jpg" alt="Share Awareness">
+                <h3>Spread Awareness</h3>
+                <p>Share your recycling journey on social media using #RecycleWithPadini and inspire others!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Responsive Form Section -->
+<div class="form-section">
+    <h2 style="text-align: center; color: #008000;">Join the Campaign</h2>
+    <p style="text-align: center; color: #333;">Fill out the form below to join our recycling campaign and receive your voucher!</p>
+    <form class="campaign-form" action="voucher.html" method="post">
+                <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Store Location:</label>
+            <select id="location" name="location" required>
+                <option value="" disabled selected>Select a store location</option>
+            </select>
+        </div>
+        
+        <script>
+            // Dynamic Store Locations
+            const locations = ["Pavillion Kuala Lumpur", "Mid Valley Megamall", "IOI City Mall, Putrajaya", "1 Utama Shopping Centre", "Sunway Pyramid", "AEON Mall Bukit Tinggi", "Melawati Mall"];
+            const locationDropdown = document.getElementById("location");
+        
+            locations.forEach(location => {
+                const option = document.createElement("option");
+                option.value = location.toLowerCase();
+                option.textContent = location;
+                locationDropdown.appendChild(option);
+            });
+        </script>
+             
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Submit and Get Voucher</button>
+        </div>
+    </form>
+</div>
+
+<button id="scrollToTopBtn" title="Go to top">↑</button>
+
+    <script>
+        // Get the button
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      
+        // Show the button when the user scrolls down 100px from the top
+        window.onscroll = function() {
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollToTopBtn.style.display = "block";
+          } else {
+            scrollToTopBtn.style.display = "none";
+          }
+        };
+      
+        // Scroll to the top when the button is clicked
+        scrollToTopBtn.onclick = function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+      </script>
+      
+<footer>
+    <p>&copy; 2025 Padini Campaign Website | IMD318 Assignment purpose.</p>
+    <a href="terms.html">Terms & Conditions</a> | <a href="policy.html">Privacy Policy</a>
+</footer>
+
+</body>
+</html>

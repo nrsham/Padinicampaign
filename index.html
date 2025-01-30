@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Padini | Campaign Website</title>
+    <link rel="icon" type="image/x-icon" href="image/padini-icon.png">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header {
+            background-color: black;
+            box-shadow: 0 2px 5px gray;
+            padding: 1px 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        /* Banner Section */
+        .banner {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: maroon;
+            margin-top: 20px;
+        }
+
+        .banner h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 16px;
+        }
+
+        /* Slideshow */
+        .slideshow-container {
+            position: relative;
+            max-width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Slide Images */
+        .slides {
+            display: none;
+            width: 100%;
+            animation: fade 1.5s ease-in-out;
+        }
+
+        /* Slide Transition */
+        @keyframes fade {
+            from { opacity: 0.4; }
+            to { opacity: 1; }
+        }
+
+        /* Slideshow Buttons */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: maroon;
+    margin-top: 100px; /* Add margin to ensure it's below the navigation */
+}
+
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        Exclusive Sale: Get Up to 50% Off on Selected Items!
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    PADINI.COM
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="campaign1.html">#ReuseWithPadini</a></li>
+                    <li><a href="campaign2.html">#RecycleWithPadini</a></li>
+                    <li>
+                        <a href="#">More</a>
+                        <div class="dropdown-content">
+                            <a href="about.html">About</a>
+                            <a href="collection.html">Collection</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <img class="slides" src="image/banner1.png" alt="Slide 1">
+        <img class="slides" src="image/banner2.png" alt="Slide 2">
+
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- Slideshow JavaScript -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Auto-change every 3 seconds
+        }
+
+        // Manual Slide Navigation
+        function changeSlide(n) {
+            slideIndex += n;
+            let slides = document.getElementsByClassName("slides");
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            } else if (slideIndex < 1) {
+                slideIndex = slides.length;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+    <div>
+        <div class="hero-text">
+            <h1 style="font-size:50px; font-weight: bold; color: maroon;">Join Us in Our Sustainable Journey!</h1>
+            <p style="font-size: 20px; color: black;">Explore our campaigns and make a difference with Padini.</p>
+            <a href="about.html">
+                <button>Learn More</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="video-banner">
+        <video autoplay muted loop playsinline>
+            <source src="video/padini homepage.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">
+            <h1>Discover Our Latest Collection</h1>
+            <p>Shop now and redefine your style!</p>
+            <a href="https://www.padini.com/" target="_blank" class="video-btn">Explore Now</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Padini Campaign Website | IMD318 Assignment purpose.</p>
+        <a href="terms.html">Terms & Conditions</a> | <a href="policy.html">Privacy Policy</a>
+    </footer>
+
+</body>
+</html>

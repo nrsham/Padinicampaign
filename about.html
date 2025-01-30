@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padini | About</title>
+    <link rel="icon" type="image/x-icon" href="image/padini-icon.png">
+    <link rel="stylesheet" href="css/nav.css">
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header {
+            background-color: black;
+            box-shadow: 0 2px 5px gray;
+            padding: 1px 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: maroon;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        #btnContainer {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .btn.active {
+            background-color: #666;
+            color: white;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .column {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1 1 calc(33.333% - 40px);
+            max-width: calc(33.333% - 40px);
+        }
+
+        .column img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .column {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        Exclusive Sale: Get Up to 50% Off on Selected Items!
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    PADINI.COM
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="campaign1.html">#ReuseWithPadini</a></li>
+                    <li><a href="campaign2.html">#RecycleWithPadini</a></li>
+                    <li>
+                        <a href="#">More</a>
+                        <div class="dropdown-content">
+                            <a href="about.html">About</a>
+                            <a href="collection.html">Collection</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2>WHO WE ARE</h2>
+
+    <p><b>Padini's Commitment to Sustainability</b></p>
+
+    <div id="btnContainer">
+        <button class="btn" onclick="listView()">List View</button>
+        <button class="btn active" onclick="gridView()">Grid View</button>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2>OUR VISION</h2>
+            <p><b>To Be a Leader in Sustainable Fashion</b></p>
+            <p>We aim to redefine fashion by embracing sustainability, reducing waste, and promoting responsible consumer habits. Our goal is to create a greener future where style and environmental responsibility go hand in hand.</p>
+        </div>
+        <div class="column">
+            <h2>OUR MISSION</h2>
+            <p><b>To Inspire Conscious Consumerism and 
+            Reduce Waste</b></p>
+            <p>We are committed to minimizing textile waste by providing accessible recycling programs, encouraging customers to give their clothes and footwear a second life.</p>
+        </div>
+        <div class="column">
+            <h2>OUR CORE VALUE</h2>
+            <p>We are committed to sustainability, responsibility, and innovation, continuously seeking ways to minimize waste and integrate eco-friendly practices. </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2>#RecycleWithPadini</h2>
+            <p>Aims to encourage their users to drop off old garments in Padini’s recycling bins. They are also welcomed to post their recycle endeavors on social media using the hashtag as to inspire others as well as boost their online presence. </p>
+        </div>
+        <div class="column">
+            <h2>#ReuseWithPadini</h2>
+            <p>Aims to extend the lifespan of clothing by encourages users to reuse old garments or return them back to the store so the clothes can be loved by someone else. 
+                This is beneficial as it reduces the demand for new production, and minimize the depletion of natural resources in making new garments of clothing. </p>
+        </div>
+        </div>
+
+    <footer>
+        <p>&copy; 2025 Padini Campaign Website | IMD318 Assignment purpose.</p>
+        <a href="terms.html">Terms & Conditions</a> | <a href="policy.html">Privacy Policy</a>
+    </footer>
+
+    <script>
+        var elements = document.getElementsByClassName("column");
+
+        function listView() {
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].style.flex = "1 1 100%";
+                elements[i].style.maxWidth = "100%";
+            }
+        }
+
+        function gridView() {
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].style.flex = "1 1 calc(33.333% - 40px)";
+                elements[i].style.maxWidth = "calc(33.333% - 40px)";
+            }
+        }
+
+        var container = document.getElementById("btnContainer");
+        var btns = container.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+</html>
